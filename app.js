@@ -19,9 +19,7 @@ outline.style.strokeDasharray = outlineLength;
 
 timeDisplay.textContent = `${Math.floor(fakeDuration / 60)}:${Math.floor(
     fakeDuration % 60
-)}`;
-if((fakeDuration / 60) < 10){
-    seconds = "0" + seconds}
+)}0`;
 
 
 
@@ -56,7 +54,7 @@ timeSelect.forEach(option => {
         fakeDuration = this.getAttribute("data-time");
         timeDisplay.textContent = `${Math.floor(fakeDuration / 60)}:${Math.floor(
             fakeDuration % 60
-        )}`;
+        )}0`;
     });
 });
 
